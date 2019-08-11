@@ -1,4 +1,4 @@
-package com.biyu2019;
+package com.biyu2019.miaosha;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
