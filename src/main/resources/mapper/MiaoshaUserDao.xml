@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.biyu2019.miaosha.dao.MiaoshaUserDao">
+
+    <select id="getById" resultType="com.biyu2019.miaosha.entity.MiaoshaUser">
+        SELECT
+            *
+        FROM
+            miaosha_user
+        WHERE
+            id = #{id}
+    </select>
+
+    <update id="update">
+        UPDATE miaosha_user
+        SET PASSWORD = #{password}
+        where
+            id = #{id}
+    </update>
+
+</mapper>
